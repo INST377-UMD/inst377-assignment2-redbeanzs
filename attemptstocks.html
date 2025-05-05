@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stocks Page</title>
+    <link rel="stylesheet" href="attemptstocks.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="attempthome.html">Home</a></li>
+            <li><a href="attemptstocks.html">Stocks</a></li>
+            <li><a href="attemptdogs.html">Dogs</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <label for="ticker">Stock Ticker:</label>
+        <input type="text" id="ticker" placeholder="Enter stock ticker">
+        <select id="range">
+            <option value="30">30 days</option>
+            <option value="60">60 days</option>
+            <option value="90">90 days</option>
+        </select>
+        <button id="lookupBtn">Lookup</button>
+    </div>
+
+    <div>
+        <canvas id="stockChart" width="800" height="400"></canvas>
+    </div>
+
+    <div>
+        <h2>Top 5 Reddit Stocks</h2>
+        <table id="topStocks">
+            <thead>
+                <tr>
+                    <th>Ticker</th>
+                    <th>Comment Count</th>
+                    <th>Sentiment</th>
+                </tr>
+            </thead>
+            <tbody id="topStocksBody"></tbody>
+        </table>
+    </div>
+
+    <div id="audio-instructions">
+        <h3>Audio Instructions</h3>
+        <p>Ensure your Mic is enabled to be able to use this feature.</p>
+        <ul>
+            <li>Look up a Stock — Say: "lookup [stock ticker]"</li>
+            <li>Navigate to a Different Page — Say: "Navigate to [Page]"</li>
+            <li>Say Hello Back to You — Say: "Hello"</li>
+        </ul>
+        <button id="audio-on-btn">Turn On Listening</button>
+        <button id="audio-off-btn">Turn Off Listening</button>
+    </div>
+
+    <script src="attemptstocks.js"></script>
+</body>
+</html>

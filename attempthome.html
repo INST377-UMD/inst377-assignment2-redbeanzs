@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class Activities - Home</title>
+    <link rel="stylesheet" href="attempthome.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="attempthome.html">Home</a></li>
+            <li><a href="attemptstocks.html">Stocks</a></li>
+            <li><a href="attemptdogs.html">Dogs</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>INST377 - Activities</h1>
+        <p>There are some different activities we can try!</p>
+        <div class="buttons">
+            <button class="button-1" id="stocks-btn" role="button">Stocks</button>
+            <button class="button-1" id="dogs-btn" role="button">Dogs</button>
+        </div>
+        <div class="quote">
+            <h2>Quote of the Page Load</h2>
+            <p id="quote-text">Loading...</p>
+        </div>
+    </div>
+
+    <div id="audio-instructions">
+        <h3>In this web page there are options to Navigate using Audio!</h3>
+        <p>Ensure your Mic is enabled to be able to use this feature.</p>
+        <ul>
+            <li>Navigate to a Different Page - Say: Navigate to &lt;page&gt;</li>
+            <li>Change the Page Color - Say: Change the color to &lt;color&gt;</li>
+            <li>Say Hello Back to you - Say: Hello</li>
+        </ul>
+        <button id="audio-on-btn">Turn On Listening</button>
+        <button id="audio-off-btn">Turn Off Listening</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="attempthome.js"></script>
+</body>
+</html>

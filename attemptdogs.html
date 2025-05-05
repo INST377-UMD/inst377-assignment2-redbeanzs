@@ -1,0 +1,43 @@
+<head>
+    <title>Class Activities - Dogs</title>
+    <link rel="stylesheet" href="attemptstocks.css">
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="attempthome.html">Home</a></li>
+            <li><a href="attemptstocks.html">Stocks</a></li>
+            <li><a href="attemptdogs.html">Dogs</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>INST377 - Activities</h1>
+        <p>Doggos! 🐶</p>
+        <div class="dog-carousel" id="dog-carousel" data-simple-slider>
+            <p>Loading dog images...</p>
+        </div>
+        <div class="buttons">
+        </div>
+        <div class="dog-info">
+            <p>Select a breed or say "Load Dog Breed <breed name>"</p>
+        </div>
+    </div>
+
+    <div id="audio-instructions">
+        <h3>Audio Instructions</h3>
+        <p>Ensure your Mic is enabled to be able to use this feature.</p>
+        <ul>
+            <li>Load Dog Breed - Say: Load Dog Breed &lt;dog breed name&gt;</li>
+            <li>Navigate to a Different Page - Say: Navigate to &lt;Page&gt;</li>
+            <li>Say Hello Back to you - Say: Hello</li>
+        </ul>
+        <button id="audio-on-btn">Turn On Listening</button>
+        <button id="audio-off-btn">Turn Off Listening</button>
+    </div>
+
+    <script src="attemptdogs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+</body>
+</html>
